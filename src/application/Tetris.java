@@ -17,7 +17,7 @@ import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-//test change
+//test chang
 
 public class Tetris extends Application {
 	// The variables
