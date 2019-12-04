@@ -28,7 +28,7 @@ public class Tetris extends Application {
 	public static int[][] GRID = new int[XMAX / SIZE][YMAX / SIZE];
 	private static Pane group = new Pane();
 	private static Form object;
-	private static Scene scene = new Scene(group, XMAX + 150, YMAX);
+	private static Scene scene = new Scene(group, XMAX + 150, YMAX, Color.BLACK);
 	public static int score = 0;
 	private static int top = 0;
 	private static boolean game = true;
@@ -46,12 +46,14 @@ public class Tetris extends Application {
 		}
 
 		Line line = new Line(XMAX, 0, XMAX, YMAX);
+		line.setStroke(Color.SNOW);
 		Text scoretext = new Text("Score: ");
-		scoretext.setStyle("-fx-font: 20 arial;");
+		scoretext.setStroke(Color.SNOW);
+		scoretext.setStyle("-fx-font: 20 monospace;");
 		scoretext.setY(50);
 		scoretext.setX(XMAX + 5);
 		Text level = new Text("Lines: ");
-		level.setStyle("-fx-font: 20 arial;");
+		level.setStyle("-fx-font: 20 monospace;");
 		level.setY(100);
 		level.setX(XMAX + 5);
 		level.setFill(Color.GREEN);
@@ -80,8 +82,8 @@ public class Tetris extends Application {
 						if (top == 2) {
 							// GAME OVER
 							Text over = new Text("GAME OVER");
-							over.setFill(Color.RED);
-							over.setStyle("-fx-font: 70 arial;");
+							over.setFill(Color.MAROON);
+							over.setStyle("-fx-font: 70 arial; -fx-font-weight: bold;");
 							over.setY(250);
 							over.setX(10);
 							group.getChildren().add(over);
