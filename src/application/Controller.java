@@ -1,5 +1,5 @@
 package application;
-//test
+//abstract class that does stuff like moving
 import javafx.scene.shape.*;
 
 public class Controller {
