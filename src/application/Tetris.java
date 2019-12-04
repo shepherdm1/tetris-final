@@ -66,6 +66,7 @@ public class Tetris extends Application {
 		nxtObj = Controller.makeRect();
 		stage.setScene(scene);
 		stage.setTitle("T E T R I S");
+		stage.setResizable(false);
 		stage.show();
 
 		Timer fall = new Timer();
