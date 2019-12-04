@@ -27,25 +27,25 @@ public class Form {
 		this.name = name;
 		switch (name) {
 			case("j"):
-				color = Color.DARKGREY;
+				color = Color.DARKBLUE;
 				break;
 			case "l":
-				color = Color.DARKTURQUOISE;
+				color = Color.ORANGE;
 				break;
 			case "o":
-				color = Color.INDIANRED;
+				color = Color.YELLOW;
 				break;
 			case "s":
-				color = Color.DARKGREEN;
+				color = Color.FORESTGREEN;
 				break;
 			case "t":
-				color = Color.DARKBLUE;
+				color = Color.MEDIUMPURPLE;
 				break;
 			case "z":
 				color = Color.FIREBRICK;
 				break;
 			case "i":
-				color = Color.SIENNA;
+				color = Color.LIGHTSKYBLUE;
 				break;		
 		}
 		this.a.setFill(color);
