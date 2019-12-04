@@ -27,7 +27,7 @@ public class Form {
 		this.name = name;
 		switch (name) {
 			case("j"):
-				color = Color.SILVER;
+				color = Color.DARKGREY;
 				break;
 			case "l":
 				color = Color.DARKTURQUOISE;

@@ -83,6 +83,7 @@ public class Tetris extends Application {
 							// GAME OVER
 							Text over = new Text("GAME OVER");
 							over.setFill(Color.MAROON);
+							over.setStroke(Color.BLACK);
 							over.setStyle("-fx-font: 70 arial; -fx-font-weight: bold;");
 							over.setY(250);
 							over.setX(10);
