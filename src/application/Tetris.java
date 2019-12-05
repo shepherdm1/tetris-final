@@ -39,7 +39,6 @@ public class Tetris extends Application {
 		launch(args);
 	}
 
-	@Override
 	public void start(Stage stage) throws Exception {
 		for (int[] a : GRID) {
 			Arrays.fill(a, 0);
