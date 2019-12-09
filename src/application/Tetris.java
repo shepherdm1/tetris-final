@@ -25,7 +25,7 @@ public class Tetris extends Application {
 	public static final int SIZE = 25;
 	public static int XMAX = SIZE * 12;
 	public static int YMAX = SIZE * 24;
-	public static int[][] GRID = new int[XMAX / SIZE][YMAX / SIZE];
+	public static int[][] GRID = new int[XMAX / SIZE][(YMAX / SIZE)+1];
 	private static Pane group = new Pane();
 	private static Form object;
 	private static Scene scene = new Scene(group, XMAX + 150, YMAX, Color.BLACK);
